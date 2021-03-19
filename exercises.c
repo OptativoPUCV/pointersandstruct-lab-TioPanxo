@@ -41,9 +41,6 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
   *suma = sumaN(a+b , m);
 }
 
-//tengo literalmente lo que pusieron antes
-//ya , entiendo
-
 /*
 Ejercicio 3.
 Considerando la estructura Persona, programe la función
@@ -81,7 +78,11 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return NULL;
+  Vector * vector = malloc(sizeof(Vector)*n);
+  for(int i = 0;i < n; i++){
+    vector[i].datos = malloc(sizeof(Vector)*n); 
+  }
+  return vector;
 }
 
 /*
