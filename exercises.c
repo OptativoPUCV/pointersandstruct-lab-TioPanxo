@@ -104,7 +104,7 @@ int obtenerValor(Vector * v, int i) {
   int valor = v->datos[i];
   printf("%d",v->datos[i]);
   if((*v).datos[i] != 0){
-
+    printf("%d",v->datos[i]);
   }
   return valor;
   
